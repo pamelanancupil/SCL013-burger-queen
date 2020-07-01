@@ -7,10 +7,16 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
+import { WaiterComponent } from './components/waiter/waiter.component';
+import { ChefComponent } from './components/chef/chef.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    WaiterComponent,
+    ChefComponent
   ],
   imports: [
     BrowserModule,
