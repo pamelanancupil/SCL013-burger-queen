@@ -1,15 +1,37 @@
+
 <div class='containerWaiter'>
+    
     <div class='containerState'>
         <h3>Estado de <br>comandas</h3>
+        <div class="stateOrder">            
+        </div>
+        <button routerLink='/home' class="backHome">H</button>
     </div>
+
     <div class='containerMenu'>
         <h3>Menú</h3>
         <div class='menuTitles'>
-            <h4>Comida</h4>
-            <h4>Bebestible</h4>
+            <button class="btnMenu">Comida</button>
+            <button class="btnMenu">Bebestible</button>
         </div>
+        <app-food-menu></app-food-menu>
     </div>
+
     <div class='containerOrder'>
         <h3>Pedido actual</h3>
+        <div class="ContainerInputs">
+            <input type="text" placeholder="Ingresa nombre del cliente">
+            <input type="text" placeholder="Ingresa N° de Mesa">
+        </div>
+        <div class="containerResume">
+            <h4>Resumen productos</h4>
+        </div>
+        <div class="containerCommentary">
+            <textarea class='commentary' placeholder="Ingresa un comentario para cocina"></textarea>
+        </div>
+        <div class="containerButtons">
+            <button class="send">Enviar a cocina</button>
+            <button class="cancel">Cancelar pedido</button>
+        </div>
     </div>
 </div>

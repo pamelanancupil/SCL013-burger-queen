@@ -12,6 +12,7 @@ import { WaiterComponent } from './components/waiter/waiter.component';
 import { ChefComponent } from './components/chef/chef.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { FoodMenuComponent } from './components/food-menu/food-menu.component';
 
 const route: Routes = [
   {
@@ -38,7 +39,8 @@ const route: Routes = [
     AppComponent,
     HomeComponent,
     WaiterComponent,
-    ChefComponent
+    ChefComponent,
+    FoodMenuComponent
   ],
   imports: [
     BrowserModule,

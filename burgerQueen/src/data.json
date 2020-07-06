@@ -1,0 +1,192 @@
+[
+    {
+      "id": "s01",
+      "name": "CIABATTA DEL JARDÍN",
+      "price": 3000,
+      "type": "food",
+      "img": "https://ibb.co/d5LQnTL",
+      "extras": [
+        {
+          "id": "e01",
+          "name": "Queso",
+          "price": 1000
+        }, 
+        {
+          "id": "e02",
+          "name": "Champiñón",
+          "price": 1000
+        }
+      ],
+      "options": [
+        {
+          "id": "t01",
+          "name": "Seitán"
+        },
+        {
+          "id": "t02",
+          "name": "Tofu"
+        },
+        {
+          "id": "t03",
+          "name": "Porotos"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "name": "INTEGRAL GRILLADO",
+      "price": 3000,
+      "type": "food",
+      "img": "https://ibb.co/V3zsy2q",
+      "extras": [
+        {
+          "id": "e01",
+          "name": "Queso",
+          "price": 1000
+        }, 
+        {
+          "id": "e02",
+          "name": "Champiñón",
+          "price": 1000
+        }
+      ],
+      "options": [
+        {
+          "id": "t01",
+          "name": "Seitán"
+        },
+        {
+          "id": "t02",
+          "name": "Tofu"
+        },
+        {
+          "id": "t03",
+          "name": "Porotos"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "name": "PANINI A LA BBQ",
+      "price": 3000,
+      "type": "food",
+      "img": "https://ibb.co/8cHTWj7",
+      "extras": [
+        {
+          "id": "e01",
+          "name": "Queso",
+          "price": 1000
+        }, 
+        {
+          "id": "e02",
+          "name": "Champiñón",
+          "price": 1000
+        }
+      ],
+      "options": [
+        {
+          "id": "t01",
+          "name": "Seitán"
+        },
+        {
+          "id": "t02",
+          "name": "Tofu"
+        },
+        {
+          "id": "t03",
+          "name": "Porotos"
+        }
+      ]
+    },
+    {
+      "id": "p01",
+      "name": "AROS DE CEBOLLA",
+      "price": 3100,
+      "img": "https://ibb.co/6ybYrGD",
+      "type": "food"
+    },
+    {
+      "id": "p02",
+      "name": "PAPAS FRITAS",
+      "price": 2000,
+      "img": "https://ibb.co/YXcMyYg",
+      "type": "food" 
+    },
+    {
+      "id": "p03",
+      "name": "FALAFEL",
+      "price": 4500,
+      "img": "https://ibb.co/ph6QDzw",
+      "type": "food"
+    },
+    {
+      "id": "a01",
+      "name": "LASAGNA BERENJENA",
+      "price": 5100,
+      "img": "https://ibb.co/mCjBgnG",
+      "type": "food"
+    },
+    {
+      "id": "a02",
+      "name": "TOFU AL CURRY",
+      "price": 4500,
+      "img": "https://ibb.co/ZdTYf5M",
+      "type": "food"
+    },
+    {
+      "id": "a03",
+      "name": "BUDDHA BOWL",
+      "price": 3800,
+      "img": "https://ibb.co/4j0tqnh",
+      "type": "food"
+    },
+    {
+      "id": "c01",
+      "name": "AMERICANO",
+      "price": 2000,
+      "img": "https://ibb.co/12y9gKr",
+      "type": "dinner"
+    },
+    {
+      "id": "c02",
+      "name": "CAPUCHINO",
+      "price": 2500,
+      "img": "https://ibb.co/26Wb0wq",
+      "type": "dinner"
+    },
+    {
+      "id": "c03",
+      "name": "TÉ/INFUSIÓN",
+      "price": 2400,
+      "img": "https://ibb.co/FBQFnBC",
+      "type": "dinner"
+    },
+    {
+      "id": "b01",
+      "name": "LIMONADA",
+      "price": 2600,
+      "img": "https://ibb.co/Pc5XH13",
+      "type": "dinner"
+    },
+    {
+      "id": "b02",
+      "name": "JUGO FRUTA",
+      "price": 2500,
+      "img": "https://ibb.co/x7wy6B2",
+      "type": "dinner"
+    },
+    {
+      "id": "b03",
+      "name": "AGUA MINERAL",
+      "price": 1900,
+      "img": "https://ibb.co/YhwqPCJ",
+      "type": "dinner"
+    },
+    {
+      "id": "b04",
+      "name": "KOMBUCHA",
+      "price": 3000,
+      "img": "https://ibb.co/zNQHSX6",
+      "type": "dinner"
+    }
+  ]
