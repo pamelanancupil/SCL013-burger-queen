@@ -145,48 +145,48 @@
       "name": "AMERICANO",
       "price": 2000,
       "img": "https://ibb.co/12y9gKr",
-      "type": "dinner"
+      "type": "drinks"
     },
     {
       "id": "c02",
       "name": "CAPUCHINO",
       "price": 2500,
       "img": "https://ibb.co/26Wb0wq",
-      "type": "dinner"
+      "type": "drinks"
     },
     {
       "id": "c03",
       "name": "TÉ/INFUSIÓN",
       "price": 2400,
       "img": "https://ibb.co/FBQFnBC",
-      "type": "dinner"
+      "type": "drinks"
     },
     {
       "id": "b01",
       "name": "LIMONADA",
       "price": 2600,
       "img": "https://ibb.co/Pc5XH13",
-      "type": "dinner"
+      "type": "drinks"
     },
     {
       "id": "b02",
       "name": "JUGO FRUTA",
       "price": 2500,
       "img": "https://ibb.co/x7wy6B2",
-      "type": "dinner"
+      "type": "drinks"
     },
     {
       "id": "b03",
       "name": "AGUA MINERAL",
       "price": 1900,
       "img": "https://ibb.co/YhwqPCJ",
-      "type": "dinner"
+      "type": "drinks"
     },
     {
       "id": "b04",
       "name": "KOMBUCHA",
       "price": 3000,
       "img": "https://ibb.co/zNQHSX6",
-      "type": "dinner"
+      "type": "drinks"
     }
   ]
