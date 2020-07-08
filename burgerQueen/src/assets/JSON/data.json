@@ -1,4 +1,5 @@
-[
+{
+  "menu":[
     {
       "id": "s01",
       "name": "CIABATTA DEL JARDÍN",
@@ -190,3 +191,4 @@
       "type": "drinks"
     }
   ]
+}

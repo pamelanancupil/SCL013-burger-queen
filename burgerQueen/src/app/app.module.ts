@@ -13,6 +13,8 @@ import { ChefComponent } from './components/chef/chef.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { FoodMenuComponent } from './components/food-menu/food-menu.component';
+import { DrinkMenuComponent } from './components/drink-menu/drink-menu.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const route: Routes = [
   {
@@ -40,14 +42,16 @@ const route: Routes = [
     HomeComponent,
     WaiterComponent,
     ChefComponent,
-    FoodMenuComponent
+    FoodMenuComponent,
+    DrinkMenuComponent
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
-    RouterModule.forRoot(route)
+    RouterModule.forRoot(route),
+    HttpClientModule
     
   ],
   providers: [],

@@ -11,10 +11,11 @@
     <div class='containerMenu'>
         <h3>Menú</h3>
         <div class='menuTitles'>
-            <button class="btnMenu">Comida</button>
-            <button class="btnMenu" >Bebestible</button>
+            <button class="btnMenu" (click)="showFood=!showFood">Comida</button>
+            <button class="btnMenu" (click)="showDrinks=!showDrinks">Bebestible</button>
         </div>
-        <app-food-menu></app-food-menu>
+        <app-food-menu *ngIf="showFood"></app-food-menu>
+        <app-drink-menu *ngIf="showDrinks"></app-drink-menu>
     </div>
 
     <div class='containerOrder'>

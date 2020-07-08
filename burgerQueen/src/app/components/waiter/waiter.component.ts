@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-waiter',
@@ -7,10 +7,12 @@ import { Component, OnInit} from '@angular/core';
 })
 export class WaiterComponent implements OnInit {
 
+  showFood:boolean=true;
+  showDrinks:boolean=false;
 
  constructor() { }
 
   ngOnInit(): void {
   }
-
+  
 }
