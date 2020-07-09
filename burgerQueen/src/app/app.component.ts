@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { foodMenuService } from './components/food-menu/food-menu.service'; 
+import { FoodMenuService } from './components/food-menu/food-menu.service'; 
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { foodMenuService } from './components/food-menu/food-menu.service';
 export class AppComponent {
   title = 'burgerQueen';
 
-constructor(public menu: foodMenuService){
+constructor(public food: FoodMenuService){
   
 }
 

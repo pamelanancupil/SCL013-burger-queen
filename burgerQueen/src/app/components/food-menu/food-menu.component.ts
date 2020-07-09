@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import * as menu from '../../../assets/JSON/data.json';
-import { foodMenuService } from './food-menu.service';
+//import * as food from '../../../assets/JSON/data.json';
+import { FoodMenuService } from './food-menu.service';
 
 @Component({
   selector: 'app-food-menu',
@@ -9,21 +9,30 @@ import { foodMenuService } from './food-menu.service';
   styleUrls: ['./food-menu.component.css']
 })
 export class FoodMenuComponent implements OnInit {
-
+  
   //data: any = menu;
+  result :any[] = [];  
 
-  constructor(public menu: foodMenuService){
+  constructor(private food : FoodMenuService){
+    this.food.foodMenu()
+    .subscribe(resp=> {
+      this.result=resp["menu"]
+      console.log(resp)
+      /*this.info=resp;
+      console.log(this.info)
+      this.loaded=true;*/
+  
+  })
     
-
   }
-  
-  
+
   //constructor() { }
   //mostrarMenu(){
   
   //}
   ngOnInit(): void {
-    console.log(menu.menu[0].img, "menu")
+    
+   // console.log(food.menu[0].img, "menu")
    
   //console.log(menu.info.img)
    // console.log(menu)
