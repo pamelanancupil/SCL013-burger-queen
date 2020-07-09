@@ -2,10 +2,10 @@
   "menu":[
     {
       "id": "s01",
-      "name": "CIABATTA DEL JARDÍN",
-      "price": 3000,
+      "nameFood": "CIABATTA DEL JARDÍN",
+      "priceFood": 3000,
       "type": "food",
-      "img": "https://ibb.co/d5LQnTL",
+      "imgFood": "https://ibb.co/d5LQnTL",
       "extras": [
         {
           "id": "e01",
@@ -35,10 +35,10 @@
     },
     {
       "id": "s02",
-      "name": "INTEGRAL GRILLADO",
-      "price": 3000,
+      "nameFood": "INTEGRAL GRILLADO",
+      "priceFood": 3000,
       "type": "food",
-      "img": "https://ibb.co/V3zsy2q",
+      "imgFood": "https://ibb.co/V3zsy2q",
       "extras": [
         {
           "id": "e01",
@@ -68,10 +68,10 @@
     },
     {
       "id": "s03",
-      "name": "PANINI A LA BBQ",
-      "price": 3000,
+      "nameFood": "PANINI A LA BBQ",
+      "priceFood": 3000,
       "type": "food",
-      "img": "https://ibb.co/8cHTWj7",
+      "imgFood": "https://ibb.co/8cHTWj7",
       "extras": [
         {
           "id": "e01",
@@ -101,93 +101,93 @@
     },
     {
       "id": "p01",
-      "name": "AROS DE CEBOLLA",
-      "price": 3100,
-      "img": "https://ibb.co/6ybYrGD",
+      "nameSnack": "AROS DE CEBOLLA",
+      "priceSnack": 3100,
+      "imgSnack": "https://ibb.co/6ybYrGD",
       "type": "food"
     },
     {
       "id": "p02",
-      "name": "PAPAS FRITAS",
-      "price": 2000,
-      "img": "https://ibb.co/YXcMyYg",
+      "nameSnack": "PAPAS FRITAS",
+      "priceSnack": 2000,
+      "imgSnack": "https://ibb.co/YXcMyYg",
       "type": "food" 
     },
     {
       "id": "p03",
-      "name": "FALAFEL",
-      "price": 4500,
-      "img": "https://ibb.co/ph6QDzw",
+      "nameSnack": "FALAFEL",
+      "priceSnack": 4500,
+      "imgSnack": "https://ibb.co/ph6QDzw",
       "type": "food"
     },
     {
       "id": "a01",
-      "name": "LASAGNA BERENJENA",
-      "price": 5100,
-      "img": "https://ibb.co/mCjBgnG",
+      "nameLunch": "LASAGNA BERENJENA",
+      "priceLunch": 5100,
+      "imgLunch": "https://ibb.co/mCjBgnG",
       "type": "food"
     },
     {
       "id": "a02",
-      "name": "TOFU AL CURRY",
-      "price": 4500,
-      "img": "https://ibb.co/ZdTYf5M",
+      "nameLunch": "TOFU AL CURRY",
+      "priceLunch": 4500,
+      "imgLunch": "https://ibb.co/ZdTYf5M",
       "type": "food"
     },
     {
       "id": "a03",
-      "name": "BUDDHA BOWL",
-      "price": 3800,
-      "img": "https://ibb.co/4j0tqnh",
+      "nameLunch": "BUDDHA BOWL",
+      "priceLunch": 3800,
+      "imgLunch": "https://ibb.co/4j0tqnh",
       "type": "food"
     },
     {
       "id": "c01",
-      "name": "AMERICANO",
-      "price": 2000,
-      "img": "https://ibb.co/12y9gKr",
+      "nameCoffee": "AMERICANO",
+      "priceCoffee": 2000,
+      "imgCoffee": "https://ibb.co/12y9gKr",
       "type": "drinks"
     },
     {
       "id": "c02",
-      "name": "CAPUCHINO",
-      "price": 2500,
-      "img": "https://ibb.co/26Wb0wq",
+      "nameCoffee": "CAPUCHINO",
+      "priceCoffee": 2500,
+      "imgCoffee": "https://ibb.co/26Wb0wq",
       "type": "drinks"
     },
     {
       "id": "c03",
-      "name": "TÉ/INFUSIÓN",
-      "price": 2400,
-      "img": "https://ibb.co/FBQFnBC",
+      "nameCoffee": "TÉ/INFUSIÓN",
+      "priceCoffee": 2400,
+      "imgCoffee": "https://ibb.co/FBQFnBC",
       "type": "drinks"
     },
     {
       "id": "b01",
-      "name": "LIMONADA",
-      "price": 2600,
-      "img": "https://ibb.co/Pc5XH13",
+      "nameDrinks": "LIMONADA",
+      "priceDrinks": 2600,
+      "imgDrinks": "https://ibb.co/Pc5XH13",
       "type": "drinks"
     },
     {
       "id": "b02",
-      "name": "JUGO FRUTA",
-      "price": 2500,
-      "img": "https://ibb.co/x7wy6B2",
+      "nameDrinks": "JUGO FRUTA",
+      "priceDrinks": 2500,
+      "imgDrinks": "https://ibb.co/x7wy6B2",
       "type": "drinks"
     },
     {
       "id": "b03",
-      "name": "AGUA MINERAL",
-      "price": 1900,
-      "img": "https://ibb.co/YhwqPCJ",
+      "nameDrinks": "AGUA MINERAL",
+      "priceDrinks": 1900,
+      "imgDrinks": "https://ibb.co/YhwqPCJ",
       "type": "drinks"
     },
     {
       "id": "b04",
-      "name": "KOMBUCHA",
-      "price": 3000,
-      "img": "https://ibb.co/zNQHSX6",
+      "nameDrinks": "KOMBUCHA",
+      "priceDrinks": 3000,
+      "imgDrinks": "https://ibb.co/zNQHSX6",
       "type": "drinks"
     }
   ]

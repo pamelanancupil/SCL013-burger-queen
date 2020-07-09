@@ -1,9 +1,26 @@
 <div class="menuFood">
-  <h4 >Sándwiches</h4>
-    <div class="ciabattaCtn" *ngFor= "let item of result;index as i">
-   <p>{{i+1}}</p>
-   <p>{{item.name}}</p>
-   <p>{{item.price}}</p>
-   <div>{{item.img}}</div>
+  <div>
+    <h4 >Sándwiches</h4>
+      <div class="foodCard" *ngFor= "let item of result;index as i">
+        <p>{{item.nameFood}}</p>
+        <p>{{item.priceFood}}</p>
+        <div>{{item.imgFood}}</div>
+      </div>
+  </div>
+  <div>
+    <h4 >Para Picar</h4>
+      <div class="snackCard" *ngFor= "let item of result;index as i">
+        <p>{{item.nameSnack}}</p>
+        <p>{{item.priceSnack}}</p>
+        <div>{{item.imgSnack}}</div>
+      </div>
+  </div>
+  <div>
+    <h4>Almuerzo</h4>
+      <div class="lunchCard" *ngFor= "let item of result;index as i">
+        <p>{{item.nameLunch}}</p>
+        <p>{{item.priceLunch}}</p>
+        <div>{{item.imgLunch}}</div>
+      </div>
   </div>
 </div>
