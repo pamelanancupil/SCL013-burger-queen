@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FoodMenuService } from '../food-menu/food-menu.service';
 
 @Component({
   selector: 'app-drink-menu',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./drink-menu.component.css']
 })
 export class DrinkMenuComponent implements OnInit {
+  
+  result :any[] = [];  
 
-  constructor() { }
-
+  constructor(private food : FoodMenuService){
+    this.food.foodMenu()
+    .subscribe(resp=> {
+      this.result=resp["menu"]
+      console.log(resp)
+    })
+  }
   ngOnInit(): void {
   }
-
 }

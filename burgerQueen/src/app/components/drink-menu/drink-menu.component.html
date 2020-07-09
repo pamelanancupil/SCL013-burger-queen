@@ -1,24 +1,19 @@
-<div class="menuDrink">
-    <h4 >Cafetería</h4>
-    <div class="ciabattaCtn">
-
+<div class="menuDrinks">
+    <div>
+      <h4 >Cafetería</h4>
+        <div class="coffeeCard" *ngFor= "let item of result;index as i">
+          <p>{{item.nameCoffee}}</p>
+          <p>{{item.priceCoffee}}</p>
+          <div>{{item.imgCoffee}}</div>
+        </div>
     </div>
-    <div class="integralCtn">
-
+    <div>
+      <h4>Bebestibles</h4>
+        <div class="drinksCard" *ngFor= "let item of result;index as i">
+          <p>{{item.nameDrinks}}</p>
+          <p>{{item.priceDrinks}}</p>
+          <div>{{item.imgDrinks}}</div>
+        </div>
     </div>
-    <div class="paniniCtn">
-
-    </div>
-    
-    <h4>Bebidas</h4>
-    <div class="onionCtn">
-
-    </div>
-    <div class="chipsCtn">
-
-    </div>
-    <div class="falafelCtn">
-
-    </div>
-    
 </div>
+  
