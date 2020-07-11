@@ -2,10 +2,10 @@
   "menu":[
     {
       "id": "s01",
-      "nameFood": "CIABATTA DEL JARDÍN",
-      "priceFood": 3000,
+      "name": "CIABATTA DEL JARDÍN",
+      "price": 3000,
       "type": "food",
-      "imgFood": "https://ibb.co/d5LQnTL",
+      "img": "../../../assets/Img/imgMenu/s-ciabatta del jardin.jpg",
       "extras": [
         {
           "id": "e01",
@@ -35,10 +35,10 @@
     },
     {
       "id": "s02",
-      "nameFood": "INTEGRAL GRILLADO",
-      "priceFood": 3000,
+      "name": "INTEGRAL GRILLADO",
+      "price": 3000,
       "type": "food",
-      "imgFood": "https://ibb.co/V3zsy2q",
+      "img": "../../../assets/Img/imgMenu/s-grillado integral.jpg",
       "extras": [
         {
           "id": "e01",
@@ -68,10 +68,10 @@
     },
     {
       "id": "s03",
-      "nameFood": "PANINI A LA BBQ",
-      "priceFood": 3000,
+      "name": "PANINI A LA BBQ",
+      "price": 3000,
       "type": "food",
-      "imgFood": "https://ibb.co/8cHTWj7",
+      "img": "../../../assets/Img/imgMenu/s-panini.png",
       "extras": [
         {
           "id": "e01",
@@ -101,94 +101,45 @@
     },
     {
       "id": "p01",
-      "nameSnack": "AROS DE CEBOLLA",
-      "priceSnack": 3100,
-      "imgSnack": "https://ibb.co/6ybYrGD",
+      "name": "AROS DE CEBOLLA",
+      "price": 3100,
+      "img": "../../../assets/Img/imgMenu/pp-aros de cebolla.png",
       "type": "food"
     },
     {
       "id": "p02",
-      "nameSnack": "PAPAS FRITAS",
-      "priceSnack": 2000,
-      "imgSnack": "https://ibb.co/YXcMyYg",
+      "name": "PAPAS FRITAS",
+      "price": 2000,
+      "img": "../../../assets/Img/imgMenu/pp-papas fritas.png",
       "type": "food" 
     },
     {
       "id": "p03",
-      "nameSnack": "FALAFEL",
-      "priceSnack": 4500,
-      "imgSnack": "https://ibb.co/ph6QDzw",
+      "name": "FALAFEL",
+      "price": 4500,
+      "img": "../../../assets/Img/imgMenu/pp-falafel.png",
       "type": "food"
     },
     {
       "id": "a01",
-      "nameLunch": "LASAGNA BERENJENA",
-      "priceLunch": 5100,
-      "imgLunch": "https://ibb.co/mCjBgnG",
+      "name": "LASAGNA BERENJENA",
+      "price": 5100,
+      "img": "../../../assets/Img/imgMenu/a-lasagnaa.png",
       "type": "food"
     },
     {
       "id": "a02",
-      "nameLunch": "TOFU AL CURRY",
-      "priceLunch": 4500,
-      "imgLunch": "https://ibb.co/ZdTYf5M",
+      "name": "TOFU AL CURRY",
+      "price": 4500,
+      "img": "../../../assets/Img/imgMenu/a-curry.png",
       "type": "food"
     },
     {
       "id": "a03",
-      "nameLunch": "BUDDHA BOWL",
-      "priceLunch": 3800,
-      "imgLunch": "https://ibb.co/4j0tqnh",
+      "name": "BUDDHA BOWL",
+      "price": 3800,
+      "img": "../../../assets/Img/imgMenu/a-buddha.png",
       "type": "food"
-    },
-    {
-      "id": "c01",
-      "nameCoffee": "AMERICANO",
-      "priceCoffee": 2000,
-      "imgCoffee": "https://ibb.co/12y9gKr",
-      "type": "drinks"
-    },
-    {
-      "id": "c02",
-      "nameCoffee": "CAPUCHINO",
-      "priceCoffee": 2500,
-      "imgCoffee": "https://ibb.co/26Wb0wq",
-      "type": "drinks"
-    },
-    {
-      "id": "c03",
-      "nameCoffee": "TÉ/INFUSIÓN",
-      "priceCoffee": 2400,
-      "imgCoffee": "https://ibb.co/FBQFnBC",
-      "type": "drinks"
-    },
-    {
-      "id": "b01",
-      "nameDrinks": "LIMONADA",
-      "priceDrinks": 2600,
-      "imgDrinks": "https://ibb.co/Pc5XH13",
-      "type": "drinks"
-    },
-    {
-      "id": "b02",
-      "nameDrinks": "JUGO FRUTA",
-      "priceDrinks": 2500,
-      "imgDrinks": "https://ibb.co/x7wy6B2",
-      "type": "drinks"
-    },
-    {
-      "id": "b03",
-      "nameDrinks": "AGUA MINERAL",
-      "priceDrinks": 1900,
-      "imgDrinks": "https://ibb.co/YhwqPCJ",
-      "type": "drinks"
-    },
-    {
-      "id": "b04",
-      "nameDrinks": "KOMBUCHA",
-      "priceDrinks": 3000,
-      "imgDrinks": "https://ibb.co/zNQHSX6",
-      "type": "drinks"
     }
   ]
 }

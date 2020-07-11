@@ -1,0 +1,53 @@
+{
+    "drinks":[
+      {
+        "id": "c01",
+        "name": "AMERICANO",
+        "price": 2000,
+        "img": "../../../assets/Img/imgMenu/b-americano.jpg",
+        "type": "drinks"
+      },
+      {
+        "id": "c02",
+        "name": "CAPUCHINO",
+        "price": 2500,
+        "img": "../../../assets/Img/imgMenu/b-capuccino.png",
+        "type": "drinks"
+      },
+      {
+        "id": "c03",
+        "name": "TÉ/INFUSIÓN",
+        "price": 2400,
+        "img": "../../../assets/Img/imgMenu/b-te.png",
+        "type": "drinks"
+      },
+      {
+        "id": "b01",
+        "name": "LIMONADA",
+        "price": 2600,
+        "img": "../../../assets/Img/imgMenu/b-limonada.png",
+        "type": "drinks"
+      },
+      {
+        "id": "b02",
+        "name": "JUGO FRUTA",
+        "price": 2500,
+        "img": "../../../assets/Img/imgMenu/b-jugo.jpg",
+        "type": "drinks"
+      },
+      {
+        "id": "b03",
+        "name": "AGUA MINERAL",
+        "price": 1900,
+        "img": "../../../assets/Img/imgMenu/b-mineral.png",
+        "type": "drinks"
+      },
+      {
+        "id": "b04",
+        "name": "KOMBUCHA",
+        "price": 3000,
+        "img": "../../../assets/Img/imgMenu/b-kombucha.jpg",
+        "type": "drinks"
+      }
+    ]
+  }

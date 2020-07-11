@@ -1,19 +1,18 @@
 <div class="menuDrinks">
-    <div>
-      <h4 >Cafetería</h4>
-        <div class="coffeeCard" *ngFor= "let item of result;index as i">
-          <p>{{item.nameCoffee}}</p>
-          <p>{{item.priceCoffee}}</p>
-          <div>{{item.imgCoffee}}</div>
-        </div>
+    
+    <div class="drinksContent">  
+      <div class="drinksCard" *ngFor= "let item of result;index as i">
+          <div class="ctnImg">
+            <img src={{item.img}}>
+          </div>
+          <div class="ctnGreen">
+            <div class="containerName">
+              <p class="name">{{item.name}}</p>
+              <p class="price">$ {{item.price}}</p>
+            </div>
+          </div>    
+      </div>
     </div>
-    <div>
-      <h4>Bebestibles</h4>
-        <div class="drinksCard" *ngFor= "let item of result;index as i">
-          <p>{{item.nameDrinks}}</p>
-          <p>{{item.priceDrinks}}</p>
-          <div>{{item.imgDrinks}}</div>
-        </div>
-    </div>
+
 </div>
   

@@ -1,11 +1,62 @@
 :host {
-    font-family: Montserrat;
-    box-sizing: border-box;
-  }
+  font-family: Montserrat;
+  box-sizing: border-box;
+}
 
-  h4{
-    margin-left: 25px;
-    font-weight: 600;
-    font-size: 18px;
-    color: #272F31;
-  }
+.drinksContent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.drinksCard{
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  height: 160px;    
+  background: #FFFFFF;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);    
+  margin: 0 10px 20px 10px;
+  justify-content: flex-end;
+}
+
+.ctnInfo{
+  display: flex;
+  flex-direction: column;
+}
+
+img{
+  width: 80%;
+  margin: 10px 12px 10px 12px;
+}
+
+.ctnGreen{
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  height: 65px;
+  background: #86BC42;
+  bottom: 0;
+  justify-content: center;
+}
+
+.name{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #272F31;
+  margin: 0;
+}
+
+.price{
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}

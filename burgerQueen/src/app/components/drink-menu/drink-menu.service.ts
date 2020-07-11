@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
     providedIn: 'root'
 })
 
-export class FoodMenuService{
+export class DrinkMenuService{
 
 info: any={};
 loaded=false;
@@ -15,8 +15,8 @@ loaded=false;
         console.log("servicio corriendo");
         
     }
-    foodMenu(){
-      return this.http.get('../../assets/JSON/data.json')
+    drinksMenu(){
+      return this.http.get('../../assets/JSON/drinks.json')
     }
 
 }
