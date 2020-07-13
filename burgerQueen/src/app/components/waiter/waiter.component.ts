@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { OrderService } from 'src/app/order.service';
 
 @Component({
   selector: 'app-waiter',
@@ -10,16 +11,12 @@ export class WaiterComponent implements OnInit {
   showFood:boolean=true;
   showDrinks:boolean=false;
 
-  selectedProduct : string = "";
+  selectedProduct : Array<any> = [];
 
- constructor() { }
+ constructor(public order:OrderService) { }
 
   ngOnInit(): void {
+    this.selectedProduct=this.order.order;
   }
   
-  funCambiar(e){
-    console.log(e);
-    this.selectedProduct = e;
-  }
-
 }

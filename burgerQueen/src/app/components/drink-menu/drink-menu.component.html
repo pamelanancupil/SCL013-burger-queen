@@ -1,7 +1,7 @@
 <div class="menuDrinks">
     
     <div class="drinksContent">  
-      <div (click)="press()" class="drinksCard" *ngFor= "let item of result;index as i">
+      <div class="drinksCard" *ngFor= "let item of result;index as i" (click)="press(item)">
           <div class="ctnImg">
             <img src={{item.img}}>
           </div>
