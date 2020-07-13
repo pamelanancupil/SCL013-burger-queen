@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { DrinkMenuService } from '../drink-menu/drink-menu.service';
+import { OrderService } from 'src/app/order.service';
 
 @Component({
   selector: 'app-drink-menu',
@@ -12,7 +13,7 @@ export class DrinkMenuComponent implements OnInit {
   
   result :any[] = [];  
 
-  constructor(private drink : DrinkMenuService){
+  constructor(public drink : DrinkMenuService, public order: OrderService){
     this.drink.drinksMenu()
     .subscribe(resp=> {
       this.result=resp["drinks"]
@@ -22,8 +23,13 @@ export class DrinkMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-press(){
-  this.cambio.emit(this.result);
+press(item){
+  this.order.order.push(item)
 }
+
+/*selectedHero: Hero;
+press(item: Hero): void {
+  this.selectedHero = item;
+}*/
 
 }
