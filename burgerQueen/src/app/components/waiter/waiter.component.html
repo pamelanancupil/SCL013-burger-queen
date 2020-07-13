@@ -5,27 +5,28 @@
         <h3>Estado de <br>comandas</h3>
         <div class="stateOrder">            
         </div>
-        <button routerLink='/home' class="backHome">H</button>
+        <button routerLink='/home' class="backHome"><i class="fas fa-home"></i></button>
     </div>
 
     <div class='containerMenu'>
         <h3>Menú</h3>
         <div class='menuTitles'>
-            <button class="btnMenu" (click)="showFood=!showFood">Comida</button>
-            <button class="btnMenu" (click)="showDrinks=!showDrinks">Bebestible</button>
+            <button class="btnMenu" (click)="showFood=!showFood" [ngClass]="{ btnMenu: showFood, blueClass: !showFood }">Comida</button>
+            <button class="btnMenu" (click)="showDrinks=!showDrinks" [ngClass]="{ btnMenu: showDrinks, blueClass: !showDrinks }">Bebestible</button>
         </div>
         <app-food-menu *ngIf="showFood"></app-food-menu>
-        <app-drink-menu *ngIf="showDrinks"></app-drink-menu>
+        <app-drink-menu *ngIf="showDrinks" (cambio)="funCambiar($event)"></app-drink-menu>
     </div>
 
     <div class='containerOrder'>
         <h3>Pedido actual</h3>
         <div class="ContainerInputs">
             <input type="text" placeholder="Ingresa nombre del cliente">
-            <input type="text" placeholder="Ingresa N° de Mesa">
+            <input type="number" placeholder="Ingresa N° de Mesa">
         </div>
         <div class="containerResume">
             <h4>Resumen productos</h4>
+            <p class="products">{{selectedProduct}}</p>
         </div>
         <div class="containerCommentary">
             <textarea class='commentary' placeholder="Ingresa un comentario para cocina"></textarea>

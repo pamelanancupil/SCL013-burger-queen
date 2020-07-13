@@ -10,9 +10,16 @@ export class WaiterComponent implements OnInit {
   showFood:boolean=true;
   showDrinks:boolean=false;
 
+  selectedProduct : string = "";
+
  constructor() { }
 
   ngOnInit(): void {
   }
   
+  funCambiar(e){
+    console.log(e);
+    this.selectedProduct = e;
+  }
+
 }

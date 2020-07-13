@@ -12,7 +12,7 @@
 }
 
 .stateOrder{
-    height: 565px;
+    height: 605px;
 }
 
 button.backHome{
@@ -27,6 +27,11 @@ button.backHome{
     font-weight: 600;
     font-size: 18px;
     color: #FAFAFA;
+}
+
+i{
+    color: red;
+    font-size: 18px;
 }
 
 .containerMenu{
@@ -58,7 +63,7 @@ h3{
     color: #272F31;
 }
 
-.btnMenu{
+.blueClass{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -70,6 +75,19 @@ h3{
     background: none;
 }
 
+.btnMenu{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 40px 0 0 25px;
+    color: #86BC42;
+    border: none;
+    background: none;
+    text-decoration: underline;
+}
+
 .ContainerInputs{
     display: flex;
     flex-direction: column;
@@ -77,12 +95,14 @@ h3{
 }
 
 input{
-    width: 266px;
+    width: 70%;
     height: 47px;
     background: rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 40px;
     margin-bottom: 20px;
+    padding-left: 25px;
+    font-size: medium;
 }
 
 ::placeholder{
@@ -90,13 +110,12 @@ input{
     font-style: italic;
     font-weight: 500;
     font-size: 14px;
-    padding-left: 15px;
 }
 
 .containerResume{
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 230px;
 }
 
 h4{
@@ -114,12 +133,12 @@ h4{
 }
 
 .commentary{
-    width: 266px;
+    width: 70%;
     height: 87px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     border: none;
-    padding-top: 15px;
+    padding: 15px 25px;
 }
 
 .containerButtons{
@@ -131,7 +150,7 @@ h4{
 
 button.cancel{
     background: #272F31;
-    width: 266px;
+    width: 60%;
     height: 56px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
@@ -145,7 +164,7 @@ button.cancel{
 
 button.send{
     background: #86BC42;
-    width: 266px;
+    width: 60%;
     height: 56px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
@@ -155,4 +174,13 @@ button.send{
     font-size: 18px;
     color: #FAFAFA;
     margin: 10px;
+}
+
+.products{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #272F31;
+    margin-left: 25px;
 }
