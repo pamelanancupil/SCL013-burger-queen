@@ -1,9 +1,9 @@
 
 <div class='containerWaiter'>
-    
+
     <div class='containerState'>
         <h3>Estado de <br>comandas</h3>
-        <div class="stateOrder">            
+        <div class="stateOrder">
         </div>
         <button routerLink='/home' class="backHome"><i class="fas fa-home"></i></button>
     </div>
@@ -15,7 +15,7 @@
             <button class="btnMenu" (click)="showDrinks=!showDrinks" [ngClass]="{ btnMenu: showDrinks, blueClass: !showDrinks }">Bebestible</button>
         </div>
         <app-food-menu *ngIf="showFood"></app-food-menu>
-        <app-drink-menu *ngIf="showDrinks" (cambio)="funCambiar($event)"></app-drink-menu>
+        <app-drink-menu *ngIf="showDrinks"></app-drink-menu>
     </div>
 
     <div class='containerOrder'>

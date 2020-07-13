@@ -24,9 +24,10 @@
   position: absolute;
   width: 63px;
   height: 63px;
-  right: 0px; 
+  right: 0px;
   bottom: 10px;
   border-radius: 50%;
+  border: none;
   background: #272F31;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
 }
@@ -39,4 +40,9 @@ h3 {
   line-height: 29px;
   margin: 34px 0 0 25px;
   color: #272F31;
+}
+
+i{
+  color: #FAFAFA;
+  font-size: 32px;
 }
