@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DrinkMenuService } from '../drink-menu/drink-menu.service';
 import { OrderService } from 'src/app/order.service';
 
@@ -9,9 +9,7 @@ import { OrderService } from 'src/app/order.service';
 })
 export class DrinkMenuComponent implements OnInit {
 
-  @Output() cambio = new EventEmitter();
-  
-  result :any[] = [];  
+  result :any[] = [];
 
   constructor(public drink : DrinkMenuService, public order: OrderService){
     this.drink.drinksMenu()
@@ -23,13 +21,7 @@ export class DrinkMenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-press(item){
+  press(item){
   this.order.order.push(item)
-}
-
-/*selectedHero: Hero;
-press(item: Hero): void {
-  this.selectedHero = item;
-}*/
-
+  }
 }

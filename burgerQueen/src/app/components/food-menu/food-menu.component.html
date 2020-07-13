@@ -1,7 +1,7 @@
 <div class="menuFood">
-  
-  <div class="foodContent">  
-    <div class="foodCard" *ngFor= "let item of result;index as i">
+
+  <div class="foodContent">
+    <div class="foodCard" *ngFor= "let item of result;index as i" (click)="press(item)">
         <div class="ctnImg">
           <img src={{item.img}}>
         </div>
@@ -10,7 +10,7 @@
             <p class="name">{{item.name}}</p>
             <p class="price">$ {{item.price}}</p>
           </div>
-        </div>    
+        </div>
     </div>
   </div>
 
