@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodMenuService } from './food-menu.service';
+import { OrderService } from 'src/app/order.service';
 
 @Component({
   selector: 'app-food-menu',
@@ -8,9 +9,9 @@ import { FoodMenuService } from './food-menu.service';
 })
 export class FoodMenuComponent implements OnInit {
 
-  result :any[] = [];  
+  result :any[] = [];
 
-  constructor(private food : FoodMenuService){
+  constructor(public food : FoodMenuService, public order: OrderService){
     this.food.foodMenu()
     .subscribe(resp=> {
       this.result=resp["menu"]
@@ -19,5 +20,9 @@ export class FoodMenuComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  press(item){
+    this.order.order.push(item)
   }
 }

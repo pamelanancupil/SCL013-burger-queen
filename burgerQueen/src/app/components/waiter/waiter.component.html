@@ -26,7 +26,7 @@
         </div>
         <div class="containerResume">
             <h4>Resumen productos</h4>
-            <p class="products" *ngFor="let product of selectedProduct">{{product.name}}</p>
+            <p class="products" *ngFor="let product of selectedProduct">{{product.name}} {{product.price}}</p>
         </div>
         <div class="containerCommentary">
             <textarea class='commentary' placeholder="Ingresa un comentario para cocina"></textarea>
