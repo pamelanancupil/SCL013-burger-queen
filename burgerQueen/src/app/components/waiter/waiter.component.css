@@ -90,19 +90,30 @@ h3{
 
 .ContainerInputs{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin:40px 0 0 25px;
 }
 
-input{
-    width: 70%;
+input.name{
+    width: 160px;
     height: 47px;
     background: rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 40px;
-    margin-bottom: 20px;
+    margin: 0 20px 20px 0;
     padding-left: 25px;
     font-size: medium;
+}
+
+input.number{
+  width: 85px;
+  height: 47px;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  font-size: medium;
 }
 
 ::placeholder{
@@ -115,14 +126,24 @@ input{
 .containerResume{
     display: flex;
     flex-direction: column;
-    height: 230px;
+    height: 315px;
+}
+
+.ctnProducts{
+  width: 90%;
+  overflow-y: scroll;
+}
+
+hr{
+  margin-left: 25px;
+  background-color: #272F31;
 }
 
 h4{
     font-family: Montserrat;
     font-weight: 600;
     font-size: 18px;
-    margin: 10px 0 0 25px;
+    margin: 10px 0 15px 25px;
     color: #272F31;
 }
 
@@ -134,7 +155,7 @@ h4{
 
 .commentary{
     width: 70%;
-    height: 87px;
+    height: 60px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     border: none;
