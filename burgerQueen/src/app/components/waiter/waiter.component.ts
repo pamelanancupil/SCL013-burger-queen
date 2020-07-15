@@ -1,5 +1,8 @@
-import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { OrderService } from 'src/app/order.service';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
+import { ConnectionService } from 'src/app/connection.service';
 
 @Component({
   selector: 'app-waiter',
@@ -13,10 +16,18 @@ export class WaiterComponent implements OnInit {
 
   selectedProduct : Array<any> = [];
 
- constructor(public order:OrderService) { }
+  commands: Observable<any[]>;
+
+  command:any = {
+    name:""
+  };
+
+ constructor(public order:OrderService, db : AngularFirestore, private connection:ConnectionService) {
+  this.commands = db.collection('commands').valueChanges();
+ }
 
   ngOnInit(): void {
-    this.selectedProduct=this.order.order;
+    this.selectedProduct = this.order.order;
   }
-  
+
 }

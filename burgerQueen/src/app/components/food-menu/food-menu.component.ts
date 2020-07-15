@@ -25,4 +25,15 @@ export class FoodMenuComponent implements OnInit {
   press(item){
     this.order.order.push(item)
   }
+
+  /*priceTotal=item.price
+  total(priceTotal){
+    this.priceTotal
+  }
+  total(item): void {
+    this.item;
+    this.priceTotal += item.price;
+    if(this.)
+
+  }*/
 }

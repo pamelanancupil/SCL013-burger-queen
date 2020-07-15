@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConnectionService } from '../../connection.service';
 
 @Component({
   selector: 'app-chef',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChefComponent implements OnInit {
 
-  constructor() { }
+  commands:any
+
+  constructor(private connection: ConnectionService ) {
+    this.connection.commandChef().subscribe(command=>{
+    this.commands=command;
+    console.log(this.commands)
+    })
+  }
 
   ngOnInit(): void {
   }

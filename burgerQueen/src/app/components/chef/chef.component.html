@@ -2,6 +2,9 @@
     <div class='containerPreparing'>
       <h3>Andan</h3>
       <div class='containerPreparations'>
+        <div class='commands' *ngFor= 'let command of commands'>
+          {{command.name}} - {{command.id}}
+        </div>
       </div>
     </div>
     <div class='containerOutput'>
