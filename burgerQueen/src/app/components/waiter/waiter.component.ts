@@ -3,6 +3,7 @@ import { OrderService } from 'src/app/order.service';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { ConnectionService } from 'src/app/connection.service';
+import { compileComponentFromMetadata } from '@angular/compiler';
 
 @Component({
   selector: 'app-waiter',
@@ -41,8 +42,8 @@ export class WaiterComponent implements OnInit {
     this.command.selectedProduct='';  // this.selectedProduct;
     console.log(this.command.selectedProduct)
   }
-  delete(command){
-
+  deleteThis(command){
+    this.connection.deleteOrder(command);
   }
 
 }

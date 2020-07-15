@@ -30,7 +30,8 @@ export class ConnectionService  {
   addCommand(command: Command){
     this.commandsCollection.add(command);//Agregar a la colección
   }
-  delete(){
-
+  deleteOrder(command){
+    this.commandDoc=this.afs.doc<Command>(`commands/${command.id}`);
+    this.commandDoc.delete();
   }
 }
