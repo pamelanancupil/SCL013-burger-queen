@@ -20,24 +20,30 @@
 
     <div class='containerOrder'>
         <h3>Pedido actual</h3>
-        <div class="ContainerInputs">
-            <input class="name" type="text" placeholder="Nombre cliente" name="name">
-            <input class="number" type="number" placeholder="N° Mesa">
-        </div>
+        <form (ngSubmit)="add()">
+          <div class="ContainerInputs">
+            <input class="name" type="text" placeholder="Nombre cliente" name="name" [(ngModel)]="command.name">
+            <input class="number" type="number" placeholder="N° Mesa" name="table" [(ngModel)]="command.table">
+          </div>
         <div class="containerResume">
             <h4>Resumen productos</h4>
               <div class="ctnProducts">
-                <p class="products" *ngFor="let product of selectedProduct">{{product.name}} $ {{product.price}}</p>
+                <div class="products" *ngFor="let product of selectedProduct" name="selectedProduct" [(ngModel)]="command.selectedProduct">{{product.name}} $ {{product.price}}
+                  <div class="delete" (click)="delete(command)">
+                     <i class="fas fa-times"></i>
+                  </div>
+                </div>
                 <hr>
                 <p class="total">Total</p>
               </div>
         </div>
         <div class="containerCommentary">
-            <textarea class='commentary' placeholder="Ingresa un comentario para cocina"></textarea>
+            <textarea class='commentary' placeholder="Ingresa un comentario para cocina" name="commentary" [(ngModel)]="command.commentary"></textarea>
         </div>
         <div class="containerButtons">
-            <button class="send">Enviar a cocina</button>
+            <button class="send" type="submit">Enviar a cocina</button>
             <button class="cancel">Cancelar pedido</button>
         </div>
+      </form>
     </div>
 </div>

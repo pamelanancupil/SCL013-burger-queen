@@ -19,7 +19,10 @@ export class WaiterComponent implements OnInit {
   commands: Observable<any[]>;
 
   command:any = {
-    name:""
+    name:"",
+    table:"",
+    commentary:"",
+    selectedProduct:"",
   };
 
  constructor(public order:OrderService, db : AngularFirestore, private connection:ConnectionService) {
@@ -28,6 +31,16 @@ export class WaiterComponent implements OnInit {
 
   ngOnInit(): void {
     this.selectedProduct = this.order.order;
+  }
+  add(){
+    this.connection.addCommand(this.command);
+    this.command.name='';
+    this.command.table='';
+    this.command.commentary='';
+    this.selectedProduct=[];
+  }
+  delete(command){
+
   }
 
 }

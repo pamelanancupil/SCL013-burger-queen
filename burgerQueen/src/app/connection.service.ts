@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-export interface Command { name: string; }
+export interface Command { name: string, table: number, commentary:string, selectedProduct:any;}
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +11,8 @@ export interface Command { name: string; }
 export class ConnectionService  {
   private commandsCollection: AngularFirestoreCollection<Command>;
   commands: Observable<Command[]>;
+
+  private commandDoc: AngularFirestoreDocument<Command>;
 
   constructor(private afs: AngularFirestore) {
     this.commandsCollection = afs.collection<Command>('commands');
@@ -26,6 +28,9 @@ export class ConnectionService  {
     return this.commands;
   }
   addCommand(command: Command){
-    this.commandsCollection.add(command);
+    this.commandsCollection.add(command);//Agregar a la colección
+  }
+  delete(){
+
   }
 }
