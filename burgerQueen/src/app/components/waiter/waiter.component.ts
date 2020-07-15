@@ -22,7 +22,7 @@ export class WaiterComponent implements OnInit {
     name:"",
     table:"",
     commentary:"",
-    selectedProduct:"",
+    selectedProduct:[]=this.order.order,
   };
 
  constructor(public order:OrderService, db : AngularFirestore, private connection:ConnectionService) {
@@ -31,13 +31,15 @@ export class WaiterComponent implements OnInit {
 
   ngOnInit(): void {
     this.selectedProduct = this.order.order;
+    console.log("select",this.selectedProduct)
   }
   add(){
     this.connection.addCommand(this.command);
     this.command.name='';
     this.command.table='';
     this.command.commentary='';
-    this.selectedProduct=[];
+    this.command.selectedProduct='';  // this.selectedProduct;
+    console.log(this.command.selectedProduct)
   }
   delete(command){
 

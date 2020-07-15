@@ -28,7 +28,7 @@
         <div class="containerResume">
             <h4>Resumen productos</h4>
               <div class="ctnProducts">
-                <div class="products" *ngFor="let product of selectedProduct" name="selectedProduct" [(ngModel)]="command.selectedProduct">{{product.name}} $ {{product.price}}
+                <div class="products" *ngFor="let product of selectedProduct">{{product.name}} $ {{product.price}}
                   <div class="delete" (click)="delete(command)">
                      <i class="fas fa-times"></i>
                   </div>

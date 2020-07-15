@@ -2,8 +2,8 @@
     <div class='containerPreparing'>
       <h3>Andan</h3>
       <div class='containerPreparations'>
-        <div class='commands' *ngFor= 'let command of commands'>
-          {{command.name}} - {{command.id}} - {{command.table}} - {{command.commentary}} - {{command.selectedProduct}}
+        <div class='commands' *ngFor= 'let command of commands; index as i'>
+          {{command.name}} - {{command.id}} - {{command.table}} - {{command.commentary}} - {{command.selectedProduct[i].name}}
         </div>
       </div>
     </div>
