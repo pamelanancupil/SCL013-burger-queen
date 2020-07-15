@@ -5,6 +5,8 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
 
 //  COMPONENTES
 import { AppComponent } from './app.component';
@@ -16,6 +18,7 @@ import { DrinkMenuComponent } from './components/drink-menu/drink-menu.component
 
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { ConnectionService } from './connection.service';
 
 const route: Routes = [
   {
@@ -51,11 +54,12 @@ const route: Routes = [
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
+    AngularFireStorageModule,
     RouterModule.forRoot(route),
     HttpClientModule
-    
+
   ],
-  providers: [],
+  providers: [ConnectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
