@@ -42,8 +42,6 @@ export class WaiterComponent implements OnInit {
     this.command.selectedProduct='';  // this.selectedProduct;
     console.log(this.command.selectedProduct)
   }
-  deleteThis(command){
-    this.connection.deleteOrder(command);
-  }
+
 
 }
