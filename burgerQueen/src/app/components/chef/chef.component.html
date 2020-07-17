@@ -3,14 +3,21 @@
       <h3>Andan</h3>
       <div class='containerPreparations'>
         <div class='commands' *ngFor= 'let command of commands; index as i'>
-          {{command.name}} - {{command.id}} - {{command.table}} - {{command.commentary}} - {{command.selectedProduct[i].name}}
+          <div class="infoCommand">
+            <p>{{command.name}}</p>{{command.id}}
+            <p>Mesa N° {{command.table}}</p>
+            <p>Comanda N° {{i+1}}</p>
+            <p>{{command.selectedProduct[i].name}}</p>
+            <p>{{command.commentary}}</p>
+          </div>
         </div>
       </div>
     </div>
     <div class='containerOutput'>
       <h3>Comanda Sale</h3>
       <div class='containerStatePreparations'>
-        <button routerLink='/home' class="btn-home"><i class="fas fa-home"></i></button>
+
       </div>
+      <button routerLink='/home' class="btn-home"><i class="fas fa-home"></i></button>
     </div>
 </div>

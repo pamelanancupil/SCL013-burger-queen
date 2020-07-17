@@ -23,7 +23,7 @@ export class WaiterComponent implements OnInit {
     name:"",
     table:"",
     commentary:"",
-    selectedProduct:[]=this.order.order,
+    selectedProduct:[]= this.order.order,
   };
 
  constructor(public order:OrderService, db : AngularFirestore, private connection:ConnectionService) {
@@ -34,14 +34,28 @@ export class WaiterComponent implements OnInit {
     this.selectedProduct = this.order.order;
     console.log("select",this.selectedProduct)
   }
+
+  // AGREGAR COMANDA A LA COLECCIÓN
   add(){
     this.connection.addCommand(this.command);
     this.command.name='';
     this.command.table='';
     this.command.commentary='';
-    this.command.selectedProduct='';  // this.selectedProduct;
-    console.log(this.command.selectedProduct)
+    this.command.selectedProduct= this.selectedProduct;
+    console.log("funcionando",this.command.selectedProduct)
   }
 
+  // CANCELAR PEDIDO
+  cancel(){
+    this.command.name='';
+    this.command.table='';
+    this.command.commentary='';
+    this.command.selectedProduct='';
+  }
+
+  // ELIMINAR PRODUCTO DEL PEDIDO
+  delete(product, i){
+    this.selectedProduct.splice(i, 1)
+  }
 
 }

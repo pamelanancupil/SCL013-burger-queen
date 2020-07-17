@@ -1,3 +1,8 @@
+:host {
+  font-family: Montserrat;
+  box-sizing: border-box;
+}
+
 .containerWaiter{
     display: flex;
     background: #E5E5E5;
@@ -129,13 +134,44 @@ input.number{
     height: 315px;
 }
 
+table {
+  font-family: Montserrat;
+  text-align: left;
+  width: 100%;
+  color: #272F31;
+}
+
+.nameP{
+  width: 60%;
+}
+
+.priceP{
+  width: 25%;
+}
+
+.iconP{
+  width: 15%;
+}
+
+button.delete{
+  border: none;
+  border-radius: 50px;
+  background: #272F31;
+  width: 25px;
+  height: 25px;
+}
+
+button.delete i{
+  font-size: 12px;
+}
+
 .ctnProducts{
   width: 90%;
   overflow-y: scroll;
+  margin-left: 25px;
 }
 
 hr{
-  margin-left: 25px;
   background-color: #272F31;
 }
 
@@ -197,11 +233,3 @@ button.send{
     margin: 10px;
 }
 
-.products{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: #272F31;
-    margin-left: 25px;
-}

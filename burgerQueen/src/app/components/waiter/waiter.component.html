@@ -28,11 +28,13 @@
         <div class="containerResume">
             <h4>Resumen productos</h4>
               <div class="ctnProducts">
-                <div class="products" *ngFor="let product of selectedProduct">{{product.name}} $ {{product.price}}
-                  <div class="delete">
-                     <i class="fas fa-times"></i>
-                  </div>
-                </div>
+                <table *ngFor="let product of selectedProduct, index as i">
+                  <tr>
+                    <td class="nameP">{{product.name}}</td>
+                    <td class="priceP"> $ {{product.price}}</td>
+                    <td class="iconP"><button class="delete" (click)="delete(product, i)"><i class="fas fa-times"></i></button></td>
+                  </tr>
+                </table>
                 <hr>
                 <p class="total">Total</p>
               </div>
@@ -42,8 +44,10 @@
         </div>
         <div class="containerButtons">
             <button class="send" type="submit">Enviar a cocina</button>
-            <button class="cancel">Cancelar pedido</button>
         </div>
       </form>
+      <div class="containerButtons">
+        <button class="cancel" (click)="cancel()">Cancelar pedido</button>
+      </div>
     </div>
 </div>
