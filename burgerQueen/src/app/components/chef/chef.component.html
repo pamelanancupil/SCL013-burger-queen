@@ -4,12 +4,13 @@
       <div class='containerPreparations'>
         <div class='commands' *ngFor= 'let command of commands; index as i'>
           <div class="infoCommand">
-            <p>{{command.name}}</p>{{command.id}}
-            <p>Mesa N° {{command.table}}</p>
-            <p>Comanda N° {{i+1}}</p>
-            <p>{{command.selectedProduct[i].name}}</p>
+            <p>Cliente: {{command.name}} / Mesa N° {{command.table}}</p>
+            <p class="numberCmd">Comanda N° {{i+1}}</p>
+            <br>
+            <p>{{command.selectedProduct[0].name}}</p>{{command.selectedProduct.length}}
             <p>{{command.commentary}}</p>
           </div>
+          <button class="btn-ready"><i class="fas fa-check"></i></button>
         </div>
       </div>
     </div>

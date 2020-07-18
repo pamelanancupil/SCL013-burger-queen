@@ -37,21 +37,22 @@ export class WaiterComponent implements OnInit {
   }
 
   // AGREGAR COMANDA A LA COLECCIÓN
-  add(){
+  add(product){
     this.connection.addCommand(this.command);
     this.command.name='';
     this.command.table='';
     this.command.commentary='';
-    this.command.selectedProduct= this.selectedProduct;
+    this.selectedProduct.splice(product);
+    //this.command.selectedProduct= this.selectedProduct;
     console.log("funcionando",this.command.selectedProduct)
   }
 
   // CANCELAR PEDIDO
-  cancel(){
+  cancel(product){
     this.command.name='';
     this.command.table='';
     this.command.commentary='';
-    this.command.selectedProduct='';
+    this.selectedProduct.splice(product);
   }
 
   // ELIMINAR PRODUCTO DEL PEDIDO
