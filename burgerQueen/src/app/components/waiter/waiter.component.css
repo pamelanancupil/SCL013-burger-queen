@@ -183,6 +183,14 @@ h4{
     color: #272F31;
 }
 
+p.total{
+  text-align: right;
+  color: #272F31;
+  font-weight: 600;
+  width: 74%;
+
+}
+
 .containerCommentary{
     display: flex;
     justify-content: center;

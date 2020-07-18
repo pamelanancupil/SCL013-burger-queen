@@ -28,6 +28,7 @@ export class WaiterComponent implements OnInit {
 
  constructor(public order:OrderService, db : AngularFirestore, private connection:ConnectionService) {
   this.commands = db.collection('commands').valueChanges();
+
  }
 
   ngOnInit(): void {
@@ -58,4 +59,13 @@ export class WaiterComponent implements OnInit {
     this.selectedProduct.splice(i, 1)
   }
 
+  // SUMAR RESUMEN DE PRODUCTOS
+  getTotal(selectedProduct: any[]) {
+		return selectedProduct.reduce(
+			(iterator: number, element: { price: number }) => {
+				return iterator + element.price;
+			},
+			0
+		);
+	}
 }
