@@ -7,7 +7,7 @@
             <p>Cliente: {{command.name}} / Mesa N° {{command.table}}</p>
             <p class="numberCmd">Comanda N° {{i+1}}</p>
             <br>
-            <p>{{command.selectedProduct[0].name}}</p>{{command.selectedProduct.length}}
+            <p *ngFor="let item of command.selectedProduct">{{item.name}}</p>
             <p>{{command.commentary}}</p>
           </div>
           <button class="btn-ready"><i class="fas fa-check"></i></button>
