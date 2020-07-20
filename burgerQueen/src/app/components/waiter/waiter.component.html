@@ -22,7 +22,7 @@
         <h3>Pedido actual</h3>
         <form (ngSubmit)="add(selectedProduct)">
           <div class="ContainerInputs">
-            <input class="name" type="text" placeholder="Nombre cliente" name="name" [(ngModel)]="command.name">
+            <input class="name" type="text" placeholder="Nombre cliente" name="name" autocomplete="off" [(ngModel)]="command.name">
             <input class="number" type="number" placeholder="N° Mesa" name="table" [(ngModel)]="command.table">
           </div>
         <div class="containerResume">

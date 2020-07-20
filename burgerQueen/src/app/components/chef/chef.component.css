@@ -36,15 +36,38 @@
   border-radius: 5px;
 }
 
-.infoCommand{
+.contentCommand{
   margin: 20px;
-  height: 205px;
+  height: 280px;
 }
 
 p.numberCmd{
   font-weight: 600;
   color: #272F31;
-  margin: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  height: 170px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.productsList{
+  width: 75%;
+  overflow-y: scroll;
+}
+
+.productsList p{
+  font-weight: 600;
+}
+
+.btnContainer{
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .containerOutput {
@@ -95,11 +118,14 @@ h3 {
   height: 45px;
   background-color: #86BC42;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-  float: right;
-  margin-right: 20px;
 }
 
 .btn-ready i{
   color: #FAFAFA;
   font-size: 24px;
+}
+
+p {
+  margin: 10px 0;
+  color: #272F31;
 }

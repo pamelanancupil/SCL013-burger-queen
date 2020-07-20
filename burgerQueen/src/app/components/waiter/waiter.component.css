@@ -24,7 +24,7 @@ button.backHome{
     background: #272F31;
     width: 65px;
     height: 65px;
-    border-radius: 50px;
+    border-radius: 60px;
     border: none;
     margin: 0 0 45px 35px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
@@ -107,7 +107,8 @@ input.name{
     border-radius: 40px;
     margin: 0 20px 20px 0;
     padding-left: 25px;
-    font-size: medium;
+    font-size: 16px;
+    color: #272F31;
 }
 
 input.number{
@@ -118,7 +119,8 @@ input.number{
   border-radius: 40px;
   margin-bottom: 20px;
   padding-left: 25px;
-  font-size: medium;
+  font-size: 16px;
+  color: #272F31;
 }
 
 ::placeholder{
@@ -204,6 +206,9 @@ p.total{
     border-radius: 5px;
     border: none;
     padding: 15px 25px;
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #272F31;
 }
 
 .containerButtons{
