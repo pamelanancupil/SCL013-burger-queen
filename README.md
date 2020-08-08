@@ -1,6 +1,6 @@
 # Sabor Vegan Restaurante
 
-![Logo](http://imgfz.com/i/lcaXA8p.jpeg)
+![Logo](http://imgfz.com/i/LjSwKsC.jpeg)
 
 ## Índice
 
@@ -14,11 +14,9 @@
 ***
 
 ## 1. Presentación del producto
-***
 En el rubro de los restaurantes y gastronomía es fundamental mantener una comunicación fluida entre garzones y cocina para brindar un buen servicio a sus clientes. 
 Tomando en cuenta las ventajas que nos proporciona la tecnología es que se propone diseñar una plataforma de comunicación entre meserxs y cocinerxs para mantener un método de trabajo ordenado, fluído y eficaz.
 ## 2. Producto
-***
 ### 2.1 Descripción del producto
 Interfaz diseñada para el restaurante Sabor Vegan, adaptada a _tablet_, donde los garzones podrán tomar los pedidos de los clientes y el encargado de cocina podrá recibir estos pedidos.
 Los garzones en su sección, podrán Ingresar nombre de los clientes y número de mesa, seleccionar los productos que pide el cliente, ver un resumen y valor total, eliminar productos en caso de que el cliente se arrepienta, agregar comentarios específicos para la cocina, cancelar un pedido por completo y enviar el pedido a la cocina.
@@ -68,11 +66,9 @@ rápidamente a los clientes que las hicieron.
 * Marcar pedidos que han sido entregados.
 
 ## 3. Diagrama de flujo
-***
 ![Flujo](http://imgfz.com/i/Pkhla9d.png)
 
 ## 4. Decisiones de diseño
-***
 
 * Logo e imágen: representan el concepto "vegetariano" haciendo referencia a productos de orígen vegetal. 
 * Colores: el color verde en particular también hace referencia a productos de origen vegetal. El color gris oscuro en cambio genera contraste.
@@ -82,7 +78,7 @@ rápidamente a los clientes que las hicieron.
 
 
 ## 5. Proceso de diseño 
-***
+
 ### 5.1 Prototipo de baja fidelidad
 ![Home](http://imgfz.com/i/pvKFw6N.png)
 ![Waiter](http://imgfz.com/i/hwGmNy9.png)
@@ -96,11 +92,7 @@ Realizamos el test de usabilidad en la plataforma Maze, fue realizado a 22 usuar
 
 ![Maze](http://imgfz.com/i/uRHTXOy.png)
 
-
-
-
 ## 6. Proyecto finalizado
-***
 
 Visita [aquí](https://burgerqueen-de02a.firebaseapp.com/home) la aplicación Sabor Vegan.
 
