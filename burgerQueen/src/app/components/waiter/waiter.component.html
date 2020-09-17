@@ -1,53 +1,79 @@
 
 <div class='containerWaiter'>
 
-    <div class='containerState'>
+  <!-- ---------------------------------------Estado -->
+
+  <div class='containerState'>
+    <div class="ctn-content-state">
+      <div class="ctn-title">
         <h3>Estado de <br>comandas</h3>
-        <div class="stateOrder">
-        </div>
+      </div>
+      <div class="ctn-order-state">
+      </div>
+      <div class="ctn-btn-state">
         <button routerLink='/home' class="backHome"><i class="fas fa-home"></i></button>
-    </div>
-
-    <div class='containerMenu'>
-        <h3>Menú</h3>
-        <div class='menuTitles'>
-            <button class="btnMenu" (click)="showFood=!showFood" [ngClass]="{ btnMenu: showFood, blueClass: !showFood }">Comida</button>
-            <button class="btnMenu" (click)="showDrinks=!showDrinks" [ngClass]="{ btnMenu: showDrinks, blueClass: !showDrinks }">Bebestible</button>
-        </div>
-        <app-food-menu *ngIf="showFood"></app-food-menu>
-        <app-drink-menu *ngIf="showDrinks"></app-drink-menu>
-    </div>
-
-    <div class='containerOrder'>
-        <h3>Pedido actual</h3>
-        <form (ngSubmit)="add(selectedProduct)">
-          <div class="ContainerInputs">
-            <input class="name" type="text" placeholder="Nombre cliente" name="name" autocomplete="off" [(ngModel)]="command.name">
-            <input class="number" type="number" placeholder="N° Mesa" name="table" [(ngModel)]="command.table">
-          </div>
-        <div class="containerResume">
-            <h4>Resumen productos</h4>
-              <div class="ctnProducts">
-                <table *ngFor="let product of selectedProduct, index as i">
-                  <tr>
-                    <td class="nameP">{{product.name}}</td>
-                    <td class="priceP"> $ {{product.price}}</td>
-                    <td class="iconP"><button class="delete" (click)="delete(product, i)"><i class="fas fa-times"></i></button></td>
-                  </tr>
-                </table>
-                <hr>
-                <p class="total">TOTAL $ {{getTotal(selectedProduct)}}</p>
-              </div>
-        </div>
-        <div class="containerCommentary">
-            <textarea class='commentary' placeholder="Ingresa un comentario para cocina" name="commentary" [(ngModel)]="command.commentary"></textarea>
-        </div>
-        <div class="containerButtons">
-            <button class="send" type="submit">Enviar a cocina</button>
-        </div>
-      </form>
-      <div class="containerButtons">
-        <button class="cancel" (click)="cancel(selectedProduct)">Cancelar pedido</button>
       </div>
     </div>
+  </div>
+
+  <!-- ---------------------------------------Menú -->
+
+  <div class='containerMenu'>
+    <div class="ctn-content-menu">
+      <div class="ctn-title">
+        <h3>Menú</h3>
+      </div>
+      <div class='menu-titles'>
+              <button class="btnMenu" (click)="showFood=!showFood" [ngClass]="{ btnMenu: showFood, blueClass: !showFood }">Comida</button>
+              <button class="btnMenu" (click)="showDrinks=!showDrinks" [ngClass]="{ btnMenu: showDrinks, blueClass: !showDrinks }">Bebestible</button>
+      </div>
+      <div class="ctn-menu">
+        <app-food-menu *ngIf="showFood"></app-food-menu>
+        <app-drink-menu *ngIf="showDrinks"></app-drink-menu>
+      </div>
+        
+    </div>
+  </div>
+    
+
+  <!-----------------------------------------Orden -->
+
+  <div class='containerOrder'>
+    <div class="ctn-content-order">
+      <div class="ctn-title">
+        <h3>Pedido actual</h3>
+      </div>
+          
+      <form (ngSubmit)="add(selectedProduct)">
+        <div class="ContainerInputs">
+          <input class="name" type="text" placeholder="Nombre cliente" name="name" autocomplete="off" [(ngModel)]="command.name">
+          <input class="number" type="number" placeholder="N° Mesa" name="table" [(ngModel)]="command.table">
+        </div>
+        <div class="containerResume">
+          <h4>Resumen productos</h4>
+          <div class="ctnProducts">
+            <table *ngFor="let product of selectedProduct, index as i">
+              <tr>
+                <td class="nameP">{{product.name}}</td>
+                <td class="priceP"> $ {{product.price}}</td>
+                <td class="iconP"><button class="delete" (click)="delete(product, i)"><i class="fas fa-times"></i></button></td>
+              </tr>
+            </table>
+            <hr>
+            <p class="total">TOTAL $ {{getTotal(selectedProduct)}}</p>
+          </div>
+        </div>
+          <div class="containerCommentary">
+              <textarea class='commentary' placeholder="Ingresa un comentario para cocina" name="commentary" [(ngModel)]="command.commentary"></textarea>
+          </div>
+          <div class="ctn-btn">
+              <button class="send" type="submit">Enviar a cocina</button>
+          </div>
+        </form>
+        <div class="ctn-btn">
+          <button class="cancel" (click)="cancel(selectedProduct)">Cancelar pedido</button>
+        </div>
+    </div>
+  </div>
+
 </div>

@@ -1,7 +1,7 @@
-:host {
-  font-family: Montserrat;
-  box-sizing: border-box;
+* {
+  font-size: 1rem;
 }
+
 
 .containerWaiter{
     display: flex;
@@ -10,34 +10,55 @@
     height: 100vh;
 }
 
+/* ------------------------------------------------------------------------Estado*/
+
 .containerState{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 25%;
 }
 
-.stateOrder{
-    height: 605px;
+.ctn-content-state{
+  height: 95%;
+  width: 85%;
+}
+
+.ctn-title{
+  display: flex;
+  align-items: center;
+  height: 10%;
+  margin-left: 1em;
+}
+
+.ctn-order-state{
+    height: 80%;
+}
+
+.ctn-btn-state{
+  height: 10%;
 }
 
 button.backHome{
     background: #272F31;
-    width: 65px;
-    height: 65px;
-    border-radius: 60px;
+    width: 4.1em;
+    height: 4.1em;
+    border-radius: 3.7em;
     border: none;
-    margin: 0 0 45px 35px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
     font-family: Montserrat;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.1em;
     color: #FAFAFA;
 }
 
 i{
     color: #FAFAFA;
-    font-size: 32px;
+    font-size: 2em;
 }
+
+/* ----------------------------------------------------------------------Menú */
 
 .containerMenu{
     display: flex;
@@ -45,95 +66,129 @@ i{
     width: 40%;
     background: #FAFAFA;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
 }
 
-.menuTitles{
+.ctn-content-menu{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 95%;
+}
+
+.menu-titles{
     display: flex;
     flex-direction: row;
+    height: 10%;
+    margin-left: 1em;
 }
+
+.blueClass{
+  margin-right: 1em;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.8em;
+  color: #272F31;
+  border: none;
+  background: none;
+}
+
+.btnMenu{
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.8em;
+  color: #86BC42;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  margin-right: 1em;
+}
+
+.blueClass:focus{
+  outline: none;
+}
+
+.btnMenu:focus{
+  outline: none;
+}
+
+.ctn-menu{
+  height: 80%;
+}
+
+/* ---------------------------------------------------------------------Orden*/
 
 .containerOrder{
     display: flex;
     flex-direction: column;
     width: 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-content-order{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 95%;
+}
+
+form{
+  height: 78%;
+  display: flex;
+  flex-direction: column;
 }
 
 h3{
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    margin: 34px 0 0 25px;
+    font-size: 1.5em;
+    line-height: 1.8em;
     color: #272F31;
-}
-
-.blueClass{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    margin: 40px 0 0 25px;
-    color: #272F31;
-    border: none;
-    background: none;
-}
-
-.btnMenu{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 29px;
-    margin: 40px 0 0 25px;
-    color: #86BC42;
-    border: none;
-    background: none;
-    text-decoration: underline;
 }
 
 .ContainerInputs{
     display: flex;
     flex-direction: row;
-    margin:40px 0 0 25px;
+    height: 14%;
+    align-items: center;
+    margin-left: 1em;
 }
 
 input.name{
-    width: 160px;
-    height: 47px;
+    width: 10em;
+    height: 2.9em;
     background: rgba(0, 0, 0, 0.1);
     border: none;
-    border-radius: 40px;
-    margin: 0 20px 20px 0;
-    padding-left: 25px;
-    font-size: 16px;
+    border-radius: 2.5em;
+    padding-left: 1.5em;
+    font-size: 1em;
     color: #272F31;
+    margin-right: 1em;
 }
 
 input.number{
-  width: 85px;
-  height: 47px;
+  width: 5.3em;
+  height: 2.9em;
   background: rgba(0, 0, 0, 0.1);
   border: none;
-  border-radius: 40px;
-  margin-bottom: 20px;
-  padding-left: 25px;
-  font-size: 16px;
+  border-radius: 2.5em;
+  padding-left: 1.5em;
+  font-size: 1em;
   color: #272F31;
 }
 
 ::placeholder{
-    font-family: Montserrat;
     font-style: italic;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.8em;
 }
 
 .containerResume{
     display: flex;
     flex-direction: column;
-    height: 315px;
+    width: 100%;
+    height: 54%;
 }
 
 table {
@@ -157,20 +212,20 @@ table {
 
 button.delete{
   border: none;
-  border-radius: 50px;
+  border-radius: 3.1em;
   background: #272F31;
-  width: 25px;
-  height: 25px;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 button.delete i{
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 .ctnProducts{
   width: 90%;
   overflow-y: scroll;
-  margin-left: 25px;
+  margin-left: 1.5em;
 }
 
 hr{
@@ -178,11 +233,10 @@ hr{
 }
 
 h4{
-    font-family: Montserrat;
     font-weight: 600;
-    font-size: 18px;
-    margin: 10px 0 15px 25px;
+    font-size: 1.1em;
     color: #272F31;
+    margin: 0.5em 0 1em 1em;
 }
 
 p.total{
@@ -190,59 +244,107 @@ p.total{
   color: #272F31;
   font-weight: 600;
   width: 74%;
+  margin-top: 1em;
 
 }
 
 .containerCommentary{
     display: flex;
     justify-content: center;
-    margin: 20px 0 20px 0;
+    align-items: center;
+    height: 20%;
 }
 
 .commentary{
     width: 70%;
-    height: 60px;
+    height: 50%;
     background: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 0.3em;
     border: none;
-    padding: 15px 25px;
+    padding: 0.9em 1.5em;
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 1em;
     color: #272F31;
 }
 
-.containerButtons{
+.ctn-btn{
     display: flex;
     flex-direction: column;
     align-items: center;
-    bottom: 50px;
+    height: 12%;
+    align-items: center;
+    justify-content: center;
 }
 
 button.cancel{
     background: #272F31;
     width: 60%;
-    height: 56px;
+    height: 3.4em;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;
+    border-radius: 2.5rem;
     border: none;
-    font-family: Montserrat;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.1em;
     color: #FAFAFA;
-    margin: 10px;
 }
 
 button.send{
     background: #86BC42;
     width: 60%;
-    height: 56px;
+    height: 3.4em;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;
+    border-radius: 2.5em;
     border: none;
-    font-family: Montserrat;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.1em;
     color: #FAFAFA;
-    margin: 10px;
 }
 
+button.cancel:focus{
+  outline: none;
+}
+
+button.send:focus{
+  outline: none;
+}
+
+
+/* Media Queries--------------------------------------------------------------------- */
+
+@media screen and (max-width: 1330px){
+  * {
+    font-size: 0.9rem;
+} 
+}
+
+@media screen and (max-width: 950px){
+  * {
+    font-size: 0.8rem;
+} 
+}
+
+@media screen and (max-width: 820px){
+  .containerWaiter{
+    flex-direction: column-reverse;
+    height: auto;
+}
+
+.containerState{
+  width: 100%;
+  height: 50em;
+}
+
+.containerMenu{
+  width: 100%;
+  height: auto;
+}
+
+.ctn-content-menu{
+  margin: 2rem 0;
+}
+
+.containerOrder{
+  width: 100%;
+  height: 50em;
+}
+}
